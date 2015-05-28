@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <form action="index.html" method="get">
+      Levels:
+      <select id="levels" name="levels" onchange="this.form.submit();">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select><br>
+      <input id="lines" type="checkbox" name="lines" checked value="true" onchange="this.form.submit();">Lines<br>
+      <input id="rectangles" type="checkbox" name="rectangles" value="true" onchange="this.form.submit();">Triangles<br>
+    </form>
+    <canvas id="myCanvas" width="2000" height="1000"></canvas>
+    <script src="canvas.js"></script>
+  </body>
+</html>
